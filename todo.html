@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--must specify lang for accessibility reasons-->
+
+<head>
+    <!--specify encoding-->
+    <meta charset="UTF-8">
+
+    <!--this is a doc mode that allows web authors to choose what version of internet explorer the page should be rendered as-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--The browser's viewport is the area of the window in which web content can be seen.
+         This is often not the same size as the rendered page, in
+         which case the browser provides scrollbars for the user to scroll around and access all the content.-->
+    <!--initial scale determines the initial zoom when page is first loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TPLF Home!</title>
+
+    <!--link to css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--link to swiper css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--fav icon: 
+A favicon is a graphic image (icon) associated with a particular Web page and/or Web site. 
+usually displayed in tabs.-->
+
+    <!--IE9 AND 10 require a type attribute be specifed,  In these versions, 
+    although the need to define the rel attribute as shortcut icon was removed, 
+    they instead added a need to specify the media type as image/x-icon.-->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+
+    <!--box icons:https://boxicons.com/ -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="index.html" class="logo">
+                This <span>Place</span> looks familiar
+
+
+            </a>
+            <!--Search Box-->
+            <div class="search-box">
+                <!--input for search-->
+                <input type="text" name="search" id="search-input" placeholder="Search with Google">
+                <!-- <input type="submit" name="search" id="search-input" placeholder="Search"> -->
+                <!--icon for search-->
+                <i class='bx bx-search'  id="searchButton"></i>
+                
+            </div>
+
+
+            <!--user-->
+            <a href="#" class="user">
+                <img src="img/logo.png" alt="" class="user-img">
+            </a>
+
+
+            <!--NavBar-->
+            <div class="navbar">
+                <a href="index.html" class="nav-link"><i class='bx bxs-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+
+                <a href="index.html#popular" class="nav-link"><i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+
+                <a href="filter.html" class="nav-link"><i class='bx bx-search-alt-2'></i>
+                    <span class="nav-link-title">Discover</span>
+                </a>
+
+                <a href="trails-page.html" class="nav-link"><i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Trails</span>
+                </a>
+
+                <a href="social.html" class="nav-link"><i class='bx bx-donate-heart'></i>
+                    <span class="nav-link-title">Social</span>
+                </a>
+
+                <a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i>
+                    <span class="nav-link-title">About</span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <section class="container">
+        <br> <br> <br>
+        <h1>Web Accessibility Policy</h1> <br> <br>
+        <h2>Our Mission</h2>
+        <p>
+            This place looks familiar is committed to making our website accessible to everyone, including individuals with disabilities. By making our website accessible, we can reach a wider audience and provide better customer service to all of our users.
+        </p>
+        <br>
+        <Br>
+        <h2>Conformance Standards</h2>
+        Our website will confirm to the <a class="in-txt-link" href="https://www.w3.org/TR/WCAG22/#use-of-color">Web Content Accessibility Guidelines (WCAG) 2.2 by W3C</a>. We will ensure that all new content, features, and functionality on our website
+        meet these standards, and we will work to make our existing content accessible as well. Here are some examples of our implementations to meet the standards.
+
+        <ol>
+            <li>1. Clear and concise content: sentences and paragraphs are written short and clear; Images, illustrations, video, audio, and symbols are used to help clarify meaning.</li>
+            <li>2. Meaningful link text: link texts are straightforward to describe the content of the link target clearly.</li>
+            <li>3. Sufficient contrast between foreground and background: this includes text on images, background gradients, buttons, and other elements.</li>
+            <li>4. Clear and consistent navigation: navigation across pages within this website has consistent naming, styling, and positioning.</li>
+            <li>5. Interactive elements are easy to identify: the color of links on mouse hover is different.</li>
+            <li>6. Provide different viewport sizes: how page information is presented in different-sized viewports, such as mobile phones or zoomed browser windows is different. The position and presentation of main elements, such as the header and navigation
+                are changed to make the best use of the space. The text size and line width are set to maximize readability and legibility.</li>
+
+        </ol>
+        <br>
+        <h2>Monitoring</h2>
+        <ul>
+            <li>This place looks familiar will review our accessibility policy weekly to ensure that we are meeting our commitment to accessibility. We will also conduct regular accessibility testing on our website using automated tools and manual testing
+                methods to identify and address any accessibility barriers..</li>
+        </ul><br>
+        <Br>
+        <h2>Audit policy</h2>
+        This place looks familiar will identify the pages to be tested, and define the criteria for a successful audit according to the Web Content Accessibility Guidelines (WCAG). We will use a web accessibility testing tool,
+        <a class="in-txt-link" href="https://wave.webaim.org/standalone">Wave</a> to scan the pages identified in the scope. We will record the results of each test and identify any accessibility defects found.
+
+    </section>
+
+
+
+    <!-- Popular Section Start -->
+    <section class="filter container" id="filter">
+
+        <div class="filter_header1">
+            <!-- Heading -->
+            <div class="heading">
+
+    
+                <h2> Contact US </h2>
+                <p>thisplacelooksfamiliarofficial@gmail.com</p>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!--Link to Swiper JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--Link to JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

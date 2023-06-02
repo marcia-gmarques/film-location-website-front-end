@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | TPLF</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- read in jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/filter.js"></script>
+</head>
+
+<body>
+
+
+
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="index.html" class="logo">
+                This <span>Place</span> looks familiar
+
+
+            </a>
+            <!--Search Box-->
+            <div class="search-box">
+                <!--input for search-->
+                <input type="text" name="search" id="search-input" placeholder="Search with Google">
+                <!-- <input type="submit" name="search" id="search-input" placeholder="Search"> -->
+                <!--icon for search-->
+                <i class='bx bx-search' id="searchButton"></i>
+                
+            </div>
+
+
+            <!--user-->
+            <a href="#" class="user">
+                <img src="img/logo.png" alt="" class="user-img">
+            </a>
+
+
+
+            <!--NavBar-->
+            <div class="navbar">
+                <a href="index.html" class="nav-link"><i class='bx bxs-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+
+                <a href="index.html#popular" class="nav-link"><i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+
+                <a href="filter.html" class="nav-link nav-active"><i class='bx bx-search-alt-2'></i>
+                    <span class="nav-link-title">Discover</span>
+                </a>
+
+                <a href="trails-page.html" class="nav-link"><i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Trails</span>
+                </a>
+
+                <a href="social.html" class="nav-link"><i class='bx bx-donate-heart'></i>
+                    <span class="nav-link-title">Social</span>
+                </a>
+
+                <a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i>
+                    <span class="nav-link-title">About</span>
+                </a>
+
+            </div>
+
+            <!--nav bar end-->
+
+        </div>
+    </header>
+
+
+
+
+    <!-- filter Section Start -->
+    <section class="filter_container container" id="filter">
+
+
+        <div class="filter_header1">
+            <!-- Heading -->
+            <div class="heading">
+                <h1> Discover more </h1>
+                <p>Discover more for you by filtering below.</p>
+
+            </div>
+
+            <!--Filter tool begin-->
+            <form>
+                <div class="filter_menu">
+                    <div class="option">
+                        <input id="dublin" name="dublin" type="checkbox" class="checkbox">
+                        <label for="dublin"> <i class='bx bxs-map-pin' ></i> Dublin</label>
+
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" class="checkbox accessible" id="accessible">
+                        <label for="accessible"><i class='bx bx-accessibility'></i> Accessible</label>
+
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" class="checkbox view_360" id="view_360">
+                        <label for="view_360">  <i class='bx bx-street-view bx-tada' ></i> 360 View Online</label>
+                    </div>
+                </div>
+            </form>
+
+            <!--Filter tool end-->
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Content -->
+        <div class="movies-content">
+
+
+            <div class="movie-box view_360 inaccessible">
+                <img src="trails-page/building2-real.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Temple Bar</h2>
+                    <span class="movie-type">The Commitments</span>
+                    <a href="commitments_trail.html#templebar" class="watch-btn play-btn">
+                        <i class='bx bx-street-view bx-tada'></i>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="movie-box non-dublin inaccessible no_view_360">
+                <img src="img/locations/wicklow.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Wicklow Mountains</h2>
+                    <span class="movie-type">Cocaine Bear</span>
+
+                </div>
+            </div>
+
+
+
+            <div class="movie-box no_view_360 accessible">
+                <img src="img/locations/dunsoghly.jfif" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Dunsoghly Castle</h2>
+                    <span class="movie-type">Braveheart</span>
+                    <a href="commitments_trail.html#templebar" class=" access-btn play-btn">
+                        <i class='bx bx-accessibility'></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="movie-box view_360 accessible">
+                <img src="trails-page/building1-real.jpg" alt="" class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Loopline bridge, North Dock, Dublin </h2>
+                    <span class="movie-type ">The Commitments</span>
+                    <a href="commitments_trail.html#loopline" class="watch-btn play-btn ">
+                        <i class='bx bx-street-view bx-tada'></i>
+                    </a>
+                    <a href="commitments_trail.html#templebar" class=" access-btn play-btn">
+                        <i class='bx bx-accessibility'></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="movie-box non-dublin inaccessible no_view_360 ">
+                <img src="img/locations/skeilig.jfif " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Skellig Michael </h2>
+                    <span class="movie-type ">Star Wars</span>
+
+                </div>
+            </div>
+
+
+            <div class="movie-box no_view_360 accessible">
+                <img src="trails-page/building3-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Camden Street</h2>
+                    <span class="movie-type ">The Commitments...</span>
+                    <a href="commitments_trail.html#templebar" class=" access-btn play-btn">
+                        <i class='bx bx-accessibility'></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="movie-box view_360 inaccessible">
+                <img src="trails-page/building4-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Customs House</h2>
+                    <span class="movie-type ">The Commitments...</span>
+                    <a href="commitments_trail.html#customshouse " class="watch-btn play-btn ">
+                        <i class='bx bx-street-view bx-tada'></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="movie-box view_360 accessible">
+                <img src="img/home-background.PNG " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Trinity College Dublin</h2>
+                    <span class="movie-type ">Normal People</span>
+                    <a href="trails-page.html " class="watch-btn play-btn ">
+                        <i class='bx bx-street-view bx-tada'></i>
+                    </a>
+                    <a href="commitments_trail.html#templebar" class=" access-btn play-btn">
+                        <i class='bx bx-accessibility'></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="movie-box no_view_360 accessible">
+                <img src="trails-page/building5-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Mansion House</h2>
+                    <span class="movie-type ">The Commitments</span>
+                    <a href="commitments_trail.html#templebar" class=" access-btn play-btn">
+                        <i class='bx bx-accessibility'></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="movie-box no_view_360 inaccessible">
+                <img src="trails-page/building6-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Docklands</h2>
+                    <span class="movie-type ">The Commitments</span>
+
+                </div>
+            </div>
+
+
+            <div class="movie-box non-dublin inaccessible no_view_360 ">
+                <img src="trails-page/building6-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Another Place</h2>
+                    <span class="movie-type ">Another Movie</span>
+
+                </div>
+            </div>
+            <div class="movie-box no_view_360 accessible">
+                <img src="trails-page/building6-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Another Place</h2>
+                    <span class="movie-type ">Another Movie</span>
+                    <a href="commitments_trail.html#templebar" class=" access-btn play-btn">
+                        <i class='bx bx-accessibility'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="movie-box non-dublin no_view_360 inaccessible ">
+                <img src="trails-page/building6-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Another Place</h2>
+                    <span class="movie-type ">Another Movie</span>
+
+                </div>
+            </div>
+
+            <div class="movie-box no_view_360  accessible">
+                <img src="trails-page/building6-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Another Place</h2>
+                    <span class="movie-type ">Another Movie</span>
+                    <a href="commitments_trail.html#templebar" class=" access-btn play-btn">
+                        <i class='bx bx-accessibility'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="movie-box non-dublin view_360 inaccessible">
+                <img src="trails-page/building6-real.jpg " alt=" " class="movie-box-img ">
+                <div class="box-text ">
+                    <h2 class="movie-title ">Another Place</h2>
+                    <span class="movie-type ">Another Movie</span>
+                    <a href="trails-page.html " class="watch-btn play-btn ">
+                        <i class='bx bx-street-view bx-tada'></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+    <!-- filter Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; IDM All Right Reserved<span class="separator">|</span><a href="todo.html">Accessibility Policy</a></p>
+    </div>
+
+    <!-- Link Swiper Files -->
+    <script src="js/swiper-bundle.min.js "></script>
+
+</html>

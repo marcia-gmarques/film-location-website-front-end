@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!--specify encoding-->
+    <meta charset="UTF-8">
+
+    <!--this is a doc mode that allows web authors to choose what version of internet explorer the page should be rendered as-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--The browser's viewport is the area of the window in which web content can be seen.
+         This is often not the same size as the rendered page, in
+         which case the browser provides scrollbars for the user to scroll around and access all the content.-->
+    <!--initial scale determines the initial zoom when page is first loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trails | TPLF</title>
+
+    <!--link to css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--link to swiper css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--fav icon: 
+A favicon is a graphic image (icon) associated with a particular Web page and/or Web site. 
+usually displayed in tabs.-->
+
+    <!--IE9 AND 10 require a type attribute be specifed,  In these versions, 
+    although the need to define the rel attribute as shortcut icon was removed, 
+    they instead added a need to specify the media type as image/x-icon.-->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+
+    <!--box icons:https://boxicons.com/ -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="index.html" class="logo">
+                This <span>Place</span> looks familiar
+
+
+            </a>
+            <!--Search Box-->
+            <div class="search-box">
+                <!--input for search-->
+                <input type="text" name="search" id="search-input" placeholder="Search with Google">
+                <!-- <input type="submit" name="search" id="search-input" placeholder="Search"> -->
+                <!--icon for search-->
+                <i class='bx bx-search' id="searchButton"></i>
+                
+            </div>
+
+
+            <!--user-->
+            <a href="#" class="user">
+                <img src="img/logo.png" alt="" class="user-img">
+            </a>
+
+
+
+            <!--NavBar-->
+            <div class="navbar">
+                <a href="index.html" class="nav-link"><i class='bx bxs-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+
+                <a href="index.html#popular" class="nav-link"><i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+
+                <a href="filter.html" class="nav-link"><i class='bx bx-search-alt-2'></i>
+                    <span class="nav-link-title">Discover</span>
+                </a>
+
+                <a href="trails-page.html" class="nav-link nav-active"><i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Trails</span>
+                </a>
+
+                <a href="social.html" class="nav-link"><i class='bx bx-donate-heart'></i>
+                    <span class="nav-link-title">Social</span>
+                </a>
+
+                <a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i>
+                    <span class="nav-link-title">About</span>
+                </a>
+
+            </div>
+
+            <!--nav bar end-->
+
+        </div>
+    </header>
+
+
+    <!--Home-->
+
+    <section class="home container" id="home">
+        <!--Home Background Image-->
+        <img src="img/trails/trail-home.jpg" alt="" class="home-img">
+        <!--Home Text-->
+        <div class="home-text">
+            <h1 class="home-title">Discover <span>trails</span> </h1>
+            <P> TPLF trails are groups of filming locations we've pre-selected for your convenience.<br> Take a trail based on your favourite director, series or genre and make the most of your time.</P>
+
+        </div>
+    </section>
+
+    <!--Home End-->
+
+
+
+
+
+
+
+
+
+    <!-- top trails Start -->
+    <section class="movies container" id="movies">
+        <!-- Heading -->
+
+        <div class="heading">
+            <h2 class="heading-title">Our Top Picks</h2>
+        </div>
+        <!-- Movies Content -->
+        <div class="trails-content">
+            <!-- Trails Box 1 -->
+            <div class="trails-box">
+                <img src="img/trails/committments.jpg" alt="" class="trails-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">The Committments: <br>The Iconic Scenes</h2>
+                    <a href="commitments_trail.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Trails Box 2 -->
+            <div class="trails-box">
+                <img src="img/trails/horror.jpg" alt="" class="trails-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Horror in Dublin</h2>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Trails Box 3 -->
+            <div class="trails-box">
+                <img src="about-page/TCD.PNG" alt="" class="trails-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Filming at Trinity College
+                    </h2>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Trails Box 4 -->
+            <div class="trails-box">
+                <img src="img/trails/got.jpg" alt="" class="trails-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Game of Thrones: <br>The Complete Journey</h2>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trails Box 5 -->
+            <div class="trails-box">
+                <img src="img/trails/ni.jpg" alt="" class="trails-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Complete Guide to<br>film in Northern Ireland</h2>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trails Box 6 -->
+            <div class="trails-box">
+                <img src="img/trails/indie.jpg" alt="" class="trails-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Irish Indie Trail</h2>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- top trails End -->
+
+
+
+
+
+    <!-- Popular Section Start -->
+    <section class="popular container" id="popular">
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title">More Trails</h2>
+            <!-- Swiper Buttons -->
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <!-- Movies Box 1 -->
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/trails/kids.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Children's Film
+                            </h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movies Box 2 -->
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/trails/gaeity.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Theatre101 </h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 3 -->
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/home-background.PNG" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Sally Rooney Trail</h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 4 -->
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/trails/history.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Irish Film<br> & History</h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 5 -->
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/trails/tplf.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">TPLF Favourites</h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 6 -->
+
+
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Dublin Thrillers</h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movies Box 7 -->
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/trails/collins.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Michael Collins: <br>The Film</h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 9 -->
+                <div class="swiper-slide">
+                    <div class="trails-box">
+                        <img src="img/trails/field.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Explore outside <br>Dublin
+                            </h2>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Popular Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; IDM All Right Reserved<span class="separator">|</span><a href="todo.html">Accessibility Policy</a></p>
+    </div>
+
+    <!--Link to Swiper JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--Link to JS-->
+    <script src="js/main.js"></script>
+
+</html>

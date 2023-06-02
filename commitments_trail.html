@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--must specify lang for accessibility reasons-->
+
+<head>
+    <!--specify encoding-->
+    <meta charset="UTF-8">
+
+    <!--this is a doc mode that allows web authors to choose what version of internet explorer the page should be rendered as-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--The browser's viewport is the area of the window in which web content can be seen.
+         This is often not the same size as the rendered page, in
+         which case the browser provides scrollbars for the user to scroll around and access all the content.-->
+    <!--initial scale determines the initial zoom when page is first loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Commitments | TPLF</title>
+
+    <!--link to css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--link to swiper css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--fav icon: 
+A favicon is a graphic image (icon) associated with a particular Web page and/or Web site. 
+usually displayed in tabs.-->
+
+    <!--IE9 AND 10 require a type attribute be specifed,  In these versions, 
+    although the need to define the rel attribute as shortcut icon was removed, 
+    they instead added a need to specify the media type as image/x-icon.-->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+
+    <!--box icons:https://boxicons.com/ -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="index.html" class="logo">
+                This <span>Place</span> looks familiar
+
+
+            </a>
+           <!--Search Box-->
+           <div class="search-box">
+            <!--input for search-->
+            <input type="text" name="search" id="search-input" placeholder="Search with Google">
+            <!-- <input type="submit" name="search" id="search-input" placeholder="Search"> -->
+            <!--icon for search-->
+            <i class='bx bx-search' type="submit" id="searchButton"></i>
+            
+        </div>
+
+
+            <!--user-->
+            <a href="#" class="user">
+                <img src="img/logo.png" alt="" class="user-img">
+            </a>
+
+
+            <!--NavBar-->
+            <div class="navbar">
+                <a href="index.html" class="nav-link"><i class='bx bxs-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+
+                <a href="index.html#popular" class="nav-link"><i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+
+                <a href="filter.html" class="nav-link"><i class='bx bx-search-alt-2'></i>
+                    <span class="nav-link-title">Discover</span>
+                </a>
+
+                <a href="trails-page.html" class="nav-link nav-active"><i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Trails</span>
+                </a>
+
+                <a href="social.html" class="nav-link"><i class='bx bx-donate-heart'></i>
+                    <span class="nav-link-title">Social</span>
+                </a>
+
+                <a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i>
+                    <span class="nav-link-title">About</span>
+                </a>
+
+            </div>
+
+            <!--nav bar end-->
+
+        </div>
+    </header>
+
+
+
+
+
+    <!-- Trails Movie Container -->
+    <div class="play-container container">
+        <!-- PLay Image -->
+        <img src="trails-page/play-background.jpg" alt="" class="play-img">
+        <!-- Play Text -->
+        <div class="play-text">
+            <h2>The Commitments (1991)</h2>
+            <!-- Ratings -->
+            <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <!-- Tags -->
+            <div class="tags">
+                <span>Comedy</span>
+                <span>Drama</span>
+                <span>Music</span>
+            </div>
+            <!-- Trailer Button -->
+        </div>
+        <!-- PLay Btn -->
+        <i class='bx bx-right-arrow play-movie'></i>
+        <!-- Video Container -->
+        <div class="video-container">
+            <!-- Video-Box -->
+            <div class="video-box">
+                <video id="myvideo" src="trails-page/trailer.webm" controls></video>
+                <!-- Close Video Icon -->
+                <i class='bx bx-x close-video'></i>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="about-movie container">
+        <h2>The Commitments (1991)</h2>
+        <p>Funny, musical and occasionally dramatic, this is the story of tumultuous rise and fall of a Dublin Soul band, The Commitments. Managed by Jimmy Rabbitte, an unemployed wheeler and dealer with a vision to create "The Worlds Hardest Working Band".
+            —Rockpile
+        </p>
+        <!-- Buliding in the series -->
+        <h2 class="building-heading">The Buildings In The Film</h2>
+        <div class="building">
+            <div class="building-box">
+                <img src="trails-page/building1-real.jpg" alt="" class="building-img">
+                <span class="building-title">Dart Coming Into Tara <br>Station</span>
+            </div>
+            <div class="building-box">
+                <img src="trails-page/building2-real.jpg" alt="" class="building-img">
+                <span class="building-title">Temple Bar</span>
+            </div>
+            <div class="building-box">
+                <img src="trails-page/building3-real.jpg" alt="" class="building-img">
+                <span class="building-title">The Camden</span>
+            </div>
+            <div class="building-box">
+                <img src="trails-page/building4-real.jpg" alt="" class="building-img">
+                <span class="building-title">The Customs house</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Building 1 - Dart Coming Into Tara Station-->
+    <div class="building1">
+        <div class="container" id="loopline">
+            <div class="row">
+                <div class="building1-col-1">
+                    <img src="trails-page/building1-movie.JPG" alt="">
+                    <img src="trails-page/building1-real.jpg" alt="">
+                </div>
+                <div class="building1-col-2">
+                    <div class="header-wrapper">
+                        <h1 class="sub-title">Dart Coming Into Tara Station</h1>
+                        <a href="360view-building1.html" class="view-button-link">
+                            <div class="view-button">
+                                <i class='bx bx-street-view bx-tada'></i>
+                                <span class="view-text">360° View</span>
+                            </div>
+                        </a>
+                    </div>
+                    <i class='bx bxs-camera-movie'></i>
+                    <p class="location">Scene: First Dart Scene</p></br>
+                    <i class='bx bxs-map'></i>
+                    <p class="location">Location: Loopline bridge, North Dock, Dublin</p>
+
+                    <p>In the opening scenes of the movie there is plenty of b roll of the city. One of the more noticeable ones is the b roll of the view from the Dart (train) going south bound, towards Tara Dart Station, crossing over the River Liffey
+                        on the Loopline Bridge AKA Butt Bridge.</p>
+
+                    <p><br>One major event in Irish history that included the Loopline Bridge was the 1916 Easter Rising. The British warship The Helga was called apon to stop the Irish rebellion. The Helga sailed up the River Liffey and stopped at the Loopline
+                        Bridge and shot over it and shelled Liberty Hall, the building in the bottom right of the shot, with her 12-pound guns.
+
+                    </p>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4182.939839816318!2d-6.257067722548565!3d53.347872216664186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8f86557e73%3A0xd2a67c339668a8e!2sLoopline%20Bridge!5e0!3m2!1sen!2sie!4v1679617513330!5m2!1sen!2sie"
+                            width="640" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Building 2 - Temple Bar Street -->
+    <div class="building1">
+        <div class="container" id="templebar">
+            <div class="row">
+                <div class="building1-col-1">
+                    <img src="trails-page/building2-movie.JPG" alt="">
+                    <img src="trails-page/building2-real.jpg" alt="">
+                </div>
+                <div class="building1-col-2">
+                    <div class="header-wrapper">
+                        <h1 class="sub-title">Temple Bar</h1>
+                        <a href="360view-building2.html" class="view-button-link">
+                            <div class="view-button">
+                                <i class='bx bx-street-view bx-tada'></i>
+                                <span class="view-text">360° View</span>
+                            </div>
+                        </a>
+                    </div>
+                    <i class='bx bxs-camera-movie'></i>
+                    <p class="location">Scene: Drumming in the pawn shop</p></br>
+                    <i class='bx bxs-map'></i>
+                    <p class="location">Location: Temple Bar, Dublin 2</p>
+
+                    <p>The Band is shopping for a drum set from a pawn broker 'PJ Delaney' in Temple Bar. The band secure a drum set after Jimmy Rabbitte trades his mother's ornament in exchange.
+                    </p>
+
+                    <p><br>The land on which Temple bar resides was a suburb outside the city walls in the 14th century. Temple Bar got its name from the Temple family of the early 1600s. The present-day Temple Bar is a centre for nightlife in Dublin. Temple
+                        Bar is also the location of some Dublins well know film and art establishments, The Irish Film Institute etc.
+                    </p>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4763.75685387398!2d-6.269057374101501!3d53.34543241991506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple%20Bar%2C%20Dublin!5e0!3m2!1sen!2sie!4v1679619470577!5m2!1sen!2sie"
+                            width="640" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Building 3 - The Camden -->
+    <div class="building1">
+        <div class="container">
+            <div class="row">
+                <div class="building1-col-1">
+                    <img src="trails-page/building3-movie.JPG" alt="">
+                    <img src="trails-page/building3-real.jpg" alt="">
+                </div>
+                <div class="building1-col-2">
+                    <div class="header-wrapper">
+                        <h1 class="sub-title">The Camden</h1>
+                        <a href="360view-building3.html" class="view-button-link">
+                            <div class="view-button">
+                                <i class='bx bx-street-view bx-tada'></i>
+                                <span class="view-text">360° View</span>
+                            </div>
+                        </a>
+                    </div>
+                    <i class='bx bxs-camera-movie'></i>
+                    <p class="location">Scene: Practice Scene</p></br>
+                    <i class='bx bxs-map'></i>
+                    <p class="location">Location: 84 - 87 Camden Street Lower, Dublin 2</p>
+
+                    <p>Without question, the prize for the best renovation has to go to the dilapidated pool hall above which the band rehearses. It was Ricardo’s Snooker Hall, built in 1912 as a movie palace, and given an art deco makeover in the Thirties.
+                        The old ‘rehearsal room’ was also seen in 1995’s An Awfully Big Adventure, with Hugh Grant and Alan Rickman.
+                    </p>
+
+                    <p><br>It’s now the classy Camden Deluxe Hotel, 84-87 Camden Street Lower, south of Temple Bar. Thankfully the elaborately decorated arched ceiling has been preserved and now graces the Palace Nightclub, above the hotel proper. And to
+                        top it all, you can still play snooker here.
+                    </p>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8865.422361146288!2d-6.272185444085929!3d53.33786033002667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9fdc3757ad%3A0x1aae679bb5779c00!2sCamden%20Deluxe%20Hotel!5e0!3m2!1sen!2sie!4v1679619348343!5m2!1sen!2sie"
+                            width="640" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Building 4 - Customs house -->
+    <div class="building1">
+        <div class="container" id="customshouse">
+            <div class="row">
+                <div class="building1-col-1">
+                    <img src="trails-page/building4-movie.JPG" alt="">
+                    <img src="trails-page/building4-real.jpg" alt="">
+                </div>
+                <div class="building1-col-2">
+                    <div class="header-wrapper">
+                        <h1 class="sub-title">The Customs House</h1>
+                        <a href="360view-building4.html" class="view-button-link">
+                            <div class="view-button">
+                                <i class='bx bx-street-view bx-tada'></i>
+                                <span class="view-text">360° View</span>
+                            </div>
+                        </a>
+                    </div>
+                    <i class='bx bxs-camera-movie'></i>
+                    <p class="location">Scene: Lady of mann ship / going on holiday</p></br>
+                    <i class='bx bxs-map'></i>
+                    <p class="location">Location: North Dock, Dublin 1</p>
+
+                    <p>Imelda Quirke is about to go on her holidays with her boyfriend's family before changing her mind at the last second so she could be with the band for their next concert. In this shot you see the Lady of Mann docked on the Liffey.
+                        The prominent building in the background of the shot is the Customs House.</p>
+
+                    <p><br>The Customs House was built by James Gandon, an English architect, in 1791. The Customs House was restored in 1921 after it was destroyed in a fire. The building's original use was to collect customs duties. But when Dublins port
+                        moved further down the building became obsolete. The Customs House was a part of major events in Irish history including the War of Independence. It now houses Local Government and Heritage.
+
+                    </p>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.695657343379!2d-6.255327184803751!3d53.34870397997948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8f9f7ff169%3A0xdc5ddca5e1fb7e5a!2sThe%20Custom%20House!5e0!3m2!1sen!2sie!4v1679619949420!5m2!1sen!2sie"
+                            width="640" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Building 5 - The Mansion house -->
+    <div class="building1">
+        <div class="container">
+            <div class="row">
+                <div class="building1-col-1">
+                    <img src="trails-page/building5-movie.JPG" alt="">
+                    <img src="trails-page/building5-real.jpg" alt="">
+                </div>
+                <div class="building1-col-2">
+                    <div class="header-wrapper">
+                        <h1 class="sub-title">The Mansion House</h1>
+                        <a href="360view-building5.html" class="view-button-link">
+                            <div class="view-button">
+                                <i class='bx bx-street-view bx-tada'></i>
+                                <span class="view-text">360° View</span>
+                            </div>
+                        </a>
+                    </div>
+                    <i class='bx bxs-camera-movie'></i>
+                    <p class="location">Scene: Jimmy lips meeting Wilson piquet</p></br>
+                    <i class='bx bxs-map'></i>
+                    <p class="location">Location: Dawson St, Dublin 2</p>
+
+                    <p>The Mansion House is where Joey 'The lips' convinced Jimmy Rabbitte to let him have a personal alone conversation with Wilson Pickett to try to get a favour from the famous American singer and songwriter on behalf of the band.
+                    </p>
+
+                    <p><br>The Mansion house was built in 1710 by Joshua Dawson, the same Dawson the street was named after. The Round Room in the Mansion House is the location of the first Dáil assembly ("Assembly of Ireland") where Ireland declared its
+                        independence in 1919. The Mansion House is annually open to the public as part of Open House initiatives.
+
+                    </p>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.165303147339!2d-6.260018784585616!3d53.34029707997781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e90d09ae3a5%3A0x87a2450be48b0a4b!2sThe%20Mansion%20House!5e0!3m2!1sen!2sie!4v1679621195269!5m2!1sen!2sie"
+                            width="640" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Building 6 - The Diving Bell-->
+    <div class="building1">
+        <div class="container">
+            <div class="row">
+                <div class="building1-col-1">
+                    <img src="trails-page/building6-movie.JPG" alt="">
+                    <img src="trails-page/building6-real.jpg" alt="">
+                </div>
+                <div class="building1-col-2">
+                    <div class="header-wrapper">
+                        <h1 class="sub-title">The Diving Bell</h1>
+                        <a href="360view-building6.html" class="view-button-link">
+                            <div class="view-button">
+                                <i class='bx bx-street-view bx-tada'></i>
+                                <span class="view-text">360° View</span>
+                            </div>
+                        </a>
+                    </div>
+                    <i class='bx bxs-camera-movie'></i>
+                    <p class="location">Scene: Jimmy Rabbit walking off and joey and jimmy last scene</p></br>
+                    <i class='bx bxs-map'></i>
+                    <p class="location">Location: Dublin Docklands, Dublin</p>
+
+                    <p>At the base of the Diving Bell Jimmy Rabbitte and Joey 'the lips' Fagan have their last scene together. The band's heated break-up after the concert leaves Jimmy angry with no hope. When Joey tries to shine a positive light on the
+                        situation, Jimmy is quick to call out Joey, on what he thought were lies. The pair goes their separate ways for the last time.
+                    </p>
+
+                    <p><br>The Diving Bell was a device in which six men were placed under the bottomless bell that was compressed with air and lowered onto the bottom of the River Liffey to excavate the soil by hand. The Dublin Diving Bell was used from
+                        1866 for 92 years to build and repair the walls of the quay during the development of Dublins port.
+
+                    </p>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4763.6583442506135!2d-6.241437241434584!3d53.346314090506134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670eed5bfc6a7b%3A0x2c269f040c9e5d4c!2sDiving%20Bell!5e0!3m2!1sen!2sie!4v1679621542620!5m2!1sen!2sie"
+                            width="640" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; IDM All Right Reserved<span class="separator">|</span><a href="todo.html">Accessibility Policy</a></p>
+    </div>
+
+    <!--Link to Swiper JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--Link to JS-->
+    <script src="js/main.js"></script>
+
+
+
+    <!--Link to Swiper JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--Link to JS-->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

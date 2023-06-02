@@ -1,0 +1,1338 @@
+@import url('https://fonts.cdnfonts.com/css/bahnschrift');
+
+/* * means apply those styles to all elements*/
+
+* {
+    font-family: "bahnschrift", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /*Smooth: scrolls in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. */
+    box-sizing: border-box;
+    /*If you set box-sizing: border-box; on an element, padding and border are included in the width and height:*/
+    scroll-padding-top: 2rem;
+}
+
+
+/*custom scroll bar*/
+
+
+/*::-webkit-scrollbar — the entire scrollbar.*/
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+
+
+/*::-webkit-scrollbar-thumb — the draggable scrolling handle.*/
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+
+/*variables:  visual identity/branding colors*/
+
+:root {
+    --main-color: #EEB902;
+    --hover-color: #C4EBC8;
+    --body-color: #054726;
+    --container-color: #00582C;
+    --dark-feature-color: #373636;
+    --text-color: #fcfeff;
+}
+
+
+/*selection color*/
+
+::selection {
+    background-color: var(--hover-color);
+    color: var(--dark-feature-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ol>li {
+    margin: 1.2rem 0px;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.bx {
+    /*The cursor CSS property sets the mouse cursor, if any, to show when the mouse pointer is over an element.*/
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    /*horizontally center the element within its container.*/
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    z-index: 100;
+}
+
+
+/*nav*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    /*20 top and bottom, 0 l & r*/
+}
+
+
+/*logo*/
+
+.logo {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    /* text-transform: uppercase;   Remove as required*/
+    margin: 0 auto 0 0;
+    /*right is max amount*/
+}
+
+
+/*The <span> tag is an inline container used to mark up a part of a text, or a part of a document.*/
+
+.logo span {
+    color: var(--main-color);
+}
+
+
+/*In CSS rem stands for “root em”, a unit of measurement that represents the font size of the root element.*/
+
+.search-box {
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background-color: var(--container-color);
+    border-radius: 4rem;
+    margin-right: 1rem;
+}
+
+.search-box .bx:hover {
+    color: var(--main-color);
+}
+
+.search-box .bx {
+    font-size: 1.1rem;
+}
+
+#search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 0.938rem;
+}
+
+
+/*USER*/
+
+.user {
+    display: flex;
+}
+
+.user-img {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%;*/
+    object-fit: cover;
+    /*The replaced content is sized to maintain its aspect ratio while filling the element's entire content box.*/
+    object-position: center;
+}
+
+
+/*NAV BAR*/
+
+.navbar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    /*The transform CSS property lets you rotate, scale, skew, or translate an element.*/
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.nav-link:hover,
+.nav-active {
+    transition: 0.3s all linear;
+    /*change  slowly*/
+    color: var(--text-color);
+    /*change to white*/
+    transform: scale(1.1);
+    /*change to bigger size*/
+}
+
+.nav-link .bx {
+    font-size: 1.6rem;
+}
+
+.nav-link-title {
+    font-size: 0.7rem;
+    ;
+}
+
+
+/*HOME*/
+
+.home {
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem !important;
+    border-radius: 0.5rem;
+}
+
+.home-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.home-text {
+    padding-left: 40px;
+}
+
+.home-title {
+    font-size: 2rem;
+    font-weight: 600;
+    /*all below properties not from example, added in by dev team*/
+    background-color: var(--dark-feature-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    opacity: 0.7;
+}
+
+.home-title span,
+.home-text p span {
+    color: var(--hover-color);
+}
+
+.home-text p {
+    font-size: 0.938rem;
+    margin: 10px 0 20px;
+    /*top and bottom margin*/
+    /*all below properties not from example, added in by dev team*/
+    background-color: var(--dark-feature-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    opacity: 0.7;
+    color: white;
+}
+
+.watch-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    color: var(--text-color);
+}
+
+.watch-btn .bx {
+    font-size: 21px;
+    background: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-btn .bx:hover {
+    background: var(--hover-color);
+}
+
+.watch-btn span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/*Heading*/
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--container-color);
+    padding: 8px 14px;
+    /*top bottom*/
+    border: 1px solid hsl(200, 100%, 99%/5%);
+    margin-bottom: 2rem;
+}
+
+.heading-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/*Movie Box*/
+
+.movie-box {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.movie-box-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-box .box-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    background: linear-gradient( 8deg, hsl(240 17% 14% / 85%) 20%, hsl(240 17% 14% / 27%) 50%);
+    overflow: hidden;
+}
+
+
+/* Exclusive Button */
+
+.exclusive-button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.exclusive-button .bx {
+    font-size: 1.05rem;
+    margin-right: 5px;
+    color: #00582C;
+}
+
+.exclusive-button .dollfactory-text {
+    font-size: 0.85rem;
+    color: #00582C;
+}
+
+.movie-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.movie-type {
+    font-size: 0.938rem;
+}
+
+.play-btn {
+    position: absolute;
+    bottom: 0.8rem;
+    right: 0.8rem;
+}
+
+
+/* Swiper Btns */
+
+.swiper-btn {
+    display: flex;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: static !important;
+    margin: 0 0 0 10px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: var(--text-color);
+    font-size: 18px !important;
+    font-weight: 700;
+}
+
+
+/*Movies*/
+
+.movies .heading {
+    padding: 10px 14px;
+}
+
+.movies-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+    gap: 1.5rem;
+}
+
+
+/*the fr lets you set the size of the track as a fraction of the free space of the grid container for example 1fr 1fr 1fr sets each to be 1/3*/
+
+
+/*auto-fit: Fit whatever columns there are into the space. Prefer expanding columns to fill space rather than empty columns.*/
+
+
+/*creates a mini 'zoom' effect*/
+
+.movies-content .movie-box:hover .movie-box-img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.next-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.next-btn {
+    transition: 0.3s all linear;
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.next-btn:hover {
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+
+/*RESPONSIVE HTML*/
+
+
+/* Responsive */
+
+@media (max-width: 1170px) {
+    .navbar {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: translateY(0);
+        flex-direction: row;
+        justify-content: space-evenly;
+        row-gap: 1px;
+        padding: 10px;
+        border-top: 1px solid hsl(200 100% 99% / 5%);
+        background: linear-gradient( 8deg, hsl(240 17% 14% / 100%) 5%, hsl(240 17% 14% / 90%) 100%);
+    }
+    .nav-link .bx {
+        font-size: 1.5rem;
+    }
+    .copyright {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    .container {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 991px) {
+    .movie-box {
+        height: 340px;
+    }
+    .movies-content {
+        grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+    }
+}
+
+@media (max-width: 888px) {
+    .nav {
+        padding: 14px 0;
+    }
+    .home {
+        min-height: 440px;
+        margin-top: 4rem !important;
+    }
+    .home-text {
+        padding-left: 25px;
+    }
+    .home-title {
+        font-size: 1.6rem;
+    }
+    .movie-title {
+        font-size: 1rem;
+        padding-right: 30px;
+    }
+    .play-container {
+        min-height: 440px;
+        margin-top: 4rem !important;
+    }
+    .play-movie {
+        bottom: 14rem;
+        right: 4rem;
+    }
+    .building1-col-1,
+    .building1-col-2 {
+        flex-basis: 100% !important;
+    }
+    .cast {
+        justify-content: center;
+    }
+    .team-col-1,
+    .team-col-2 {
+        flex-basis: 100% !important;
+    }
+    .team-img-lg {
+        width: 200px;
+    }
+    .filter_menu {
+        font-size: 1.2rem !important;
+    }
+}
+
+
+/* For Medium Devices / Tablet Etc */
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 11px 0;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    section {
+        padding: 2rem 0;
+    }
+    .home-img {
+        object-position: left;
+    }
+    .movie-type {
+        font-size: 0.875rem;
+        margin-top: 2px;
+    }
+    .tags span,
+    .about-movie p {
+        font-size: 0.875rem;
+    }
+    p {
+        font-size: 0.875rem;
+    }
+    .play-text h2,
+    .about-movie h2 {
+        font-size: 1.3rem;
+    }
+    .play-movie {
+        bottom: 10rem;
+        right: 2rem;
+    }
+    .map-wrapper {
+        padding-bottom: 75%;
+        /* adjust as needed */
+    }
+}
+
+@media (max-width: 514px) {
+    .home {
+        min-height: 380px;
+    }
+    .heading {
+        padding: 2px 14px;
+    }
+    .heading-title {
+        font-size: 1rem;
+    }
+    .play-text {
+        padding: 20px;
+    }
+    .play-movie {
+        bottom: 4rem;
+    }
+    .video-box {
+        width: 94%;
+    }
+    .cast-heading {
+        font-size: 1.1rem;
+    }
+    .cast-title {
+        font-size: 0.9rem;
+    }
+    .map-wrapper {
+        padding-bottom: 75%;
+    }
+}
+
+@media (max-width: 408px) {
+    * {
+        scroll-padding-top: 5rem;
+    }
+    .filter_heading {
+        padding-top: 3rem;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 5px;
+    }
+    .search-box {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 4px;
+        order: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .home,
+    .play-container {
+        margin-top: 7rem !important;
+    }
+    .movie-box {
+        height: 300px;
+    }
+    .movies-content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    .map-wrapper {
+        padding-bottom: 75%;
+    }
+    .filter_menu {
+        flex-direction: column !important;
+    }
+    .option {
+        padding: 5px 0 !important;
+        flex-direction: row !important;
+    }
+    .heading h1 {
+        padding: 10px !important;
+    }
+}
+
+
+/* For Small Devices */
+
+@media (max-width: 370px) {
+    .home {
+        min-height: 300px;
+    }
+    .movie-box {
+        height: 285px;
+    }
+    .user-img,
+    .watch-btn .bx .access-btn {
+        width: 35px;
+        height: 35px;
+    }
+    .navbar {
+        justify-content: space-around;
+        padding: 8px 0;
+    }
+    .nav-link .bx {
+        font-size: 1.4rem;
+    }
+    .about-movie p {
+        text-align: justify;
+    }
+    .download-links {
+        grid-template-columns: 1fr;
+    }
+    .map-wrapper {
+        padding-bottom: 75%;
+    }
+}
+
+
+/* Building 1 */
+
+#building1,
+.building1 {
+    padding: 100px 0 10px;
+    color: var(--main-color);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.building1-col-1 {
+    flex-basis: 35%;
+}
+
+.building1-col-1 img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.building1-col-1 img:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.building1-col-1 img:first-child {
+    margin-bottom: 8px;
+}
+
+.building1-col-2 {
+    flex-basis: 60%;
+    color: var(--text-color);
+}
+
+.building1-col-2 .header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.sub-title {
+    color: #EEB902;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    margin-right: 18px;
+}
+
+.location {
+    font-size: 1rem;
+    color: var(--hover-color);
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.building1-col-2 .bx {
+    font-size: 1.3rem;
+    color: var(--hover-color);
+    margin-right: 5px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.building1-col-2 .bx:hover {
+    color: var(--main-color);
+    transition: 0.3s all linear;
+    transform: scale(1.15);
+}
+
+.building1-col-2 .header-wrapper .bx:hover {
+    color: var(--body-color);
+    transition: 0.3s all linear;
+    transform: scale(1.15);
+}
+
+.map-wrapper {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 31.25%;
+    /* 16:9 aspect ratio */
+}
+
+.map-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* View Button */
+
+.view-button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 8px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.view-button .bx {
+    font-size: 1.3rem;
+    margin-right: 5px;
+    color: #00582C;
+}
+
+.view-button .view-text {
+    font-size: 1rem;
+    color: #00582C;
+}
+
+
+/* building menu */
+
+.building-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.building {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    gap: 7.5rem;
+}
+
+.building-img {
+    width: 245px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.building-title {
+    display: block;
+    font-size: 0.98rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    width: 200px;
+    /* adjust width as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.building .building-box:hover .building-img {
+    transform: scale(1.06);
+    transition: 0.5s;
+}
+
+
+/* Play Container */
+
+.play-container {
+    position: relative;
+    min-height: 540px;
+    margin-top: 5rem !important;
+}
+
+.play-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.play-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    background: linear-gradient( 8deg, hsl(240 17% 14% / 74%) 14%, hsl(240 17% 14% / 14%) 44%);
+}
+
+.play-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    font-size: 1.1rem;
+    color: var(--main-color);
+    margin-top: 4px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin: 1rem 0;
+}
+
+.tags span {
+    background: var(--container-color);
+    padding: 0 4px;
+}
+
+.play-movie {
+    position: absolute;
+    bottom: 18rem;
+    right: 10rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--main-color);
+    font-size: 24px;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255, 180, 58, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 rgb(255, 193, 7, 0);
+    }
+}
+
+
+/* Video Container */
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: hsl(234 10% 20% / 60%);
+    z-index: 400;
+}
+
+.video-container.show-video {
+    display: flex;
+}
+
+.video-box {
+    position: relative;
+    width: 82%;
+}
+
+.video-box #myvideo {
+    width: 85%;
+    aspect-ratio: 16/9;
+}
+
+.close-video {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+
+/* About MOvie */
+
+.about-movie {
+    margin-top: 2rem !important;
+}
+
+.about-movie h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.about-movie p {
+    max-width: 1200px;
+    font-size: 0.938rem;
+    line-height: 1.45;
+    margin: 10px 0;
+}
+
+
+/*360view page*/
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* This will make the map container grow to occupy the available space */
+}
+
+
+/*exclusive page*/
+
+
+/* Exclusive Button */
+
+.exclusive1-button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 7px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.exclusive1-button .bx {
+    font-size: 1.3rem;
+    margin-right: 5px;
+    color: #00582C;
+}
+
+.exclusive1-button .dollfactory-text {
+    font-size: 1rem;
+    color: #00582C;
+}
+
+.exclusive-360view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* This will make the map container grow to occupy the available space */
+    margin-top: 40px;
+}
+
+
+/*Team image*/
+
+.team-img-sm {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    width: 180px !important;
+    height: 180px !important;
+}
+
+.team-img-lg {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    max-width: 400px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+    gap: 3.5rem;
+}
+
+.team-col-1 {
+    flex-basis: 25%;
+}
+
+.team-col-2 {
+    flex-basis: 70%;
+    color: var(--text-color);
+}
+
+.team-col-2 a {
+    color: var(--text-color);
+    font-size: 1.5rem !important;
+}
+
+.in-txt-link {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+a {
+    color: var(--text-color);
+}
+
+.team-col-2 a:hover,
+a:hover {
+    transition: 0.3s all linear;
+    /*change  slowly*/
+    color: var(--main-color);
+    /*change to white*/
+    transform: scale(1.1);
+    /*change to bigger size*/
+}
+
+.about-team p {
+    max-width: 100% !important;
+}
+
+
+/*Filter Tool*/
+
+.filter_container {
+    margin-top: 5rem;
+}
+
+.filter_menu {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /*all below properties not from example, added in by dev team*/
+    padding: 10px;
+    border-radius: 0.5rem;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    flex-direction: row;
+}
+
+.option,
+checkbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    color: var(--main-color);
+}
+
+form-control,
+input,
+.input {
+    font-size: 4rem;
+}
+
+.option:hover {
+    transition: 0.3s all linear;
+    /*change  slowly*/
+    color: var(--text-color);
+    /*change to white*/
+    transform: scale(1.1);
+    /*change to bigger size*/
+}
+
+
+/*Social Media*/
+
+#instafeed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0.8rem;
+}
+
+#instafeed a {
+    width: 36%;
+    margin: 5px 5px 5px 5px;
+    margin-top: 23px;
+}
+
+#instafeed a img {
+    width: 100%;
+}
+
+.social {
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem !important;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+}
+
+.social-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+
+/* statement part */
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+h2 {
+    color: #eeb902;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* Position the copyright div as a footer */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Copyright */
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    /* todo page */
+}
+
+.separator {
+    color: #eeb902;
+    padding: 0 0.5em;
+}
+
+.separator2 {
+    color: #eeb902;
+}
+
+
+/*trails page - very similair to movies but display boxes are different dimensions*/
+
+.trails-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1.5rem;
+}
+
+.trails-box {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.trails-box-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trails-box .box-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    background: linear-gradient( 8deg, hsl(240 17% 14% / 85%) 20%, hsl(240 17% 14% / 27%) 50%);
+    overflow: hidden;
+}
+
+.trails-box .box-text .bx.bxs-gift {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-bottom: 7px;
+}
+
+.trails-content .trails-box:hover .trails-box-img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.access-btn {
+    font-size: 21px;
+    background: var(--text-color);
+    color: #373636;
+    opacity: 0.7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.8rem;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+}
+
+.container-Insta{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
+.post {max-width: 50%;
+width: 36%;
+margin: 3px 3px;
+box-sizing: border-box;
+object-fit: cover;
+  }
+
+
+  @media (max-width: 768px) {
+    .container-Insta {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    .post {
+    max-width: 100%;
+    width: 90%;
+    }
+    }

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--must specify lang for accessibility reasons-->
+
+<head>
+    <!--specify encoding-->
+    <meta charset="UTF-8">
+
+    <!--this is a doc mode that allows web authors to choose what version of internet explorer the page should be rendered as-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script async src="//www.instagram.com/embed.js"></script>
+
+
+    <!--The browser's viewport is the area of the window in which web content can be seen.
+         This is often not the same size as the rendered page, in
+         which case the browser provides scrollbars for the user to scroll around and access all the content.-->
+    <!--initial scale determines the initial zoom when page is first loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | TPLF</title>
+
+    <!--link to css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--link to swiper css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--fav icon: 
+A favicon is a graphic image (icon) associated with a particular Web page and/or Web site. 
+usually displayed in tabs.-->
+
+    <!--IE9 AND 10 require a type attribute be specifed,  In these versions, 
+    although the need to define the rel attribute as shortcut icon was removed, 
+    they instead added a need to specify the media type as image/x-icon.-->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+
+    <!--box icons:https://boxicons.com/ -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <script async src="https://cse.google.com/cse.js?cx=c20b56adb683d47c2"></script> -->
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="index.html" class="logo">
+                This <span>Place</span> looks familiar
+
+
+            </a>
+            <!--Search Box-->
+            <div class="search-box">
+                <!--input for search-->
+                <input type="text" name="search" id="search-input" placeholder="Search with Google">
+                <!-- <input type="submit" name="search" id="search-input" placeholder="Search"> -->
+                <!--icon for search-->
+                <i class='bx bx-search'  id="searchButton"></i>
+                
+            </div>
+
+
+            <!--user-->
+            <a href="#" class="user">
+                <img src="img/logo.png" alt="" class="user-img">
+            </a>
+
+
+            <!--NavBar-->
+            <div class="navbar">
+                <a href="#home" class="nav-link nav-active"><i class='bx bxs-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+
+                <a href="#popular" class="nav-link"><i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+
+                <a href="filter.html" class="nav-link"><i class='bx bx-search-alt-2'></i>
+                    <span class="nav-link-title">Discover</span>
+                </a>
+
+                <a href="trails-page.html" class="nav-link"><i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Trails</span>
+                </a>
+
+                <a href="social.html" class="nav-link"><i class='bx bx-donate-heart'></i>
+                    <span class="nav-link-title">Social</span>
+                </a>
+
+                <a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i>
+                    <span class="nav-link-title">About</span>
+                </a>
+
+            </div>
+
+            <!--nav bar end-->
+
+        </div>
+    </header>
+
+
+
+    <!--Home-->
+
+    <section class="home container" id="home">
+        <!--Home Background Image-->
+        <img src="img/home-background.PNG" alt="" class="home-img">
+        <!--Home Text-->
+        <div class="home-text">
+            <h1 class="home-title">Ireland is a <span>strangely popular choice</span><br> for a filming location... </h1>
+            <p>Explore filming locations in Ireland</p>
+
+        </div>
+    </section>
+
+    <!--Home End-->
+
+    <!-- Popular Section Start -->
+    <section class="popular container" id="popular">
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title">Trending</h2>
+            <!-- Swiper Buttons -->
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <!-- Movies Box 1 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">The Commitments</h2>
+                            <span class="movie-type">Comedy/Drama/Music</span>
+                            <a href="commitments_trail.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-2.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <div class="dollfactory-container">
+                                <a href="exclusive-page.html">
+                                    <div class="exclusive-button">
+                                        <i class='bx bxs-gift'></i>
+                                        <p class="dollfactory-text">Exclusive</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <h2 class="movie-title">Doll Factory</h2>
+                            <span class="movie-type">Horror/Drama</span>
+                            <a href="exclusive-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 3 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-3.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Normal People</h2>
+                            <span class="movie-type">Drama/Romance</span>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 4 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-4.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Once</h2>
+                            <span class="movie-type">Drama/Music/Romance</span>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 5 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-5.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Leap Year</h2>
+                            <span class="movie-type">Comedy/Romance</span>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 6 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-6.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">In The Name Of <br>The Father
+                            </h2>
+                            <span class="movie-type">Biography/Crime/Drama</span>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 7 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-7.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">The Snapper</h2>
+                            <span class="movie-type">Comedy/Drama</span>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies Box 9 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-8.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">The Wind That Shakes <br>The Barley
+                            </h2>
+                            <span class="movie-type">Drama/War</span>
+                            <a href="trails-page.html" class="watch-btn play-btn">
+                                <i class='bx bx-info-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Popular Section End -->
+
+
+
+
+
+    <!-- Movies Section Start -->
+    <section class="movies container" id="movies">
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title">Films</h2>
+        </div>
+        <!-- Movies Content -->
+        <div class="movies-content">
+            <!-- Movies Box 1 -->
+            <div class="movie-box">
+                <img src="img/movie-1.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">The Committments</h2>
+                    <span class="movie-type">Comedy/Drama/Music</span>
+                    <a href="commitments_trail.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies Box 2 -->
+            <div class="movie-box">
+                <img src="img/movie-2.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <div class="dollfactory-container">
+                        <a href="exclusive-page.html">
+                            <div class="exclusive-button">
+                                <i class='bx bxs-gift'></i>
+                                <p class="dollfactory-text">Exclusive</p>
+                            </div>
+                        </a>
+                    </div>
+                    <h2 class="movie-title">Doll Factory</h2>
+                    <span class="movie-type">Horror/Drama</span>
+                    <a href="exclusive-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies Box 3 -->
+            <div class="movie-box">
+                <img src="img/movie-3.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Normal People
+                    </h2>
+                    <span class="movie-type">Drama/Romance</span>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies Box 4 -->
+            <div class="movie-box">
+                <img src="img/movie-4.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Once</h2>
+                    <span class="movie-type">Drama/Music/Romance</span>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies Box 5 -->
+            <div class="movie-box">
+                <img src="img/movie-5.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Leap Year</h2>
+                    <span class="movie-type">Comedy/Romance</span>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies Box 6 -->
+            <div class="movie-box">
+                <img src="img/movie-6.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">In The Name Of <br>The Father
+                    </h2>
+                    <span class="movie-type">Biography/Crime/Drama</span>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies Box 7 -->
+            <div class="movie-box">
+                <img src="img/movie-7.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">The Snapper</h2>
+                    <span class="movie-type">Comedy/Drama</span>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies Box 8 -->
+            <div class="movie-box">
+                <img src="img/movie-8.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">The Wind That Shakes <br>The Barley
+                    </h2>
+                    <span class="movie-type">Drama/War</span>
+                    <a href="trails-page.html" class="watch-btn play-btn">
+                        <i class='bx bx-info-circle'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Movies Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; IDM All Right Reserved<span class="separator">|</span><a href="todo.html">Accessibility Policy</a></p>
+    </div>
+
+
+
+
+    <!--Link to Swiper JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--Link to JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
